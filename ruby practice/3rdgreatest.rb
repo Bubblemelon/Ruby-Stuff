@@ -105,6 +105,54 @@ def third_great2( array )
 
 end
 
+def third_great3( array )
+
+
+  first = nil
+  second = nil
+  third = nil
+
+  i = 0
+
+  while i < array.length
+
+    current = array[i]
+
+    # compares current element with first , second and third
+    if first == nil || current > first
+      puts( "#{current} > #{first}" )
+
+      third = second
+      puts( "third = #{second}" )
+      second = first
+      puts( "second = #{first}" )
+      first = current
+      puts( "first = #{current}" )
+
+    elsif second == nil || current > second
+
+      puts( "#{current} > #{second}" )
+
+      third = second
+      puts( "third = #{second}" )
+      second = current
+      puts( "second = #{current}" )
+
+    elsif third == nil || current > third
+      puts( "#{current} > #{third}" )
+
+      third = current
+      puts( "third= #{current}" )
+
+    end
+
+    i += 1
+  end
+
+  return third
+
+end #def
+
 # Tests
 
 # remove_repeated_nums_in_array( [4,4,4,3,3,3,5,5,5] )
@@ -127,5 +175,21 @@ puts("")
     puts(
       'third_great2([2, 3, 7, 4]) == 3: ' +
       (third_great2([2, 3, 7, 4]) == 3).to_s
+    )
+puts("")
+
+puts("\nTests for third_great3()")
+puts("")
+    puts(
+      'third_great3([5, 3, 7]) == 3: ' +
+      (third_great3([5, 3, 7]) == 3).to_s
+    )
+    puts(
+      'third_great3([5, 3, 7, 4]) == 4: ' +
+      (third_great3([5, 3, 7, 4]) == 4).to_s
+    )
+    puts(
+      'third_great3([2, 3, 7, 4]) == 3: ' +
+      (third_great3([2, 3, 7, 4]) == 3).to_s
     )
 puts("")

@@ -56,13 +56,27 @@ puts "Done!"
 
 
 #
-# Bubble sort pattern
+# sample() method
+# https://ruby-doc.org/core-1.9.3/Array.html#method-i-sample
 #
+require_relative 'randnumarray'
 
-# one iteration of the inner while loop -- refer to third_great() 
+something = []
+something = random_numbers_Gen_4_array( 10, 3, 77 )
 
-5 6 2 9 7 1
-6 5 2 9 7 1
+other_thing = something.sample(2) # samples 2 elements from something and adds to hi
+
+# Notes on sample(n, random: rng) → new_ary
+#
+# rng is ruby's Random Number Generator, replace it with your own method/function
+# e.g. sample.(n , random: your_method)
+#
+# Link to usage: 
+# https://stackoverflow.com/questions/8567917/how-to-use-arraysamplen-random-rng-syntax
+
+p other_thing
+
+
 
 
 #
