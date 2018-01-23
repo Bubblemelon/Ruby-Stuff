@@ -41,13 +41,15 @@ def random_numbers_Gen_4_array( length, min, max )
     i += 1
   end
 
+  puts( "The randomised array: " )
   puts( array.inspect ) # prints out like this [a,b,c]
-
-  p array # == puts( array.inspect ) "debugging tool !"
-
+  puts()
+  
   return array
 
 
 end
 
-random_numbers_Gen_4_array( 10, 0, 10)
+# Tests
+
+# random_numbers_Gen_4_array( 10, 0, 10)

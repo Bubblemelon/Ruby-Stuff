@@ -35,6 +35,35 @@ require 'pp'
 
 pp %w( foo bar baz ) # for complex objects
 # output ["foo", "bar", "baz"]
+#
+# puts( array.inspect ) # prints out like this [a,b,c]
+#
+# p array # == puts( array.inspect ) "debugging tool !"
+
+
+#
+# until loop
+#
+puts("Input a whole number")
+x = gets.chomp.to_i
+
+until x <= 0 # does loop unitl it becomes true!  replace "=" with "<=" to not include zero as puts() output
+  puts x
+  x -= 1
+end
+
+puts "Done!"
+
+
+#
+# Bubble sort pattern
+#
+
+# one iteration of the inner while loop -- refer to third_great() 
+
+5 6 2 9 7 1
+6 5 2 9 7 1
+
 
 #
 # TESTS
