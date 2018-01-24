@@ -31,7 +31,7 @@ def hash_letter_freq( array )
 
     i2 = 1 + i # keeps track of inner while loop
 
-    while( array.length > i2 ) # this will never check the
+    while( array.length > i2 ) # this will never check the last element of the array - otherwise have i2 check itself by doing i2 = i
 
       # puts("i #{i} | i2 #{i2}") -- check if iteration is made right
 
@@ -165,5 +165,63 @@ puts("")
     puts(
       'highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) == ["b", 3]: ' +
       ( highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) ) == ['b', 3] ) .to_s
+    )
+puts("")
+
+#
+# Does not implement split() and hashes
+# Simply takes the string - treats as array - counts itself
+#
+def most_common_letter(s)
+
+  letter = nil
+  count = nil
+
+  i = 0 # tracking outer loop
+
+ # treating the string as an array
+  while s.length > i
+
+    temp_letter = s[i]
+    temp_count = 0
+
+    j = 0 # tracking inner loop
+
+    while s.length > j
+
+      # puts( "s[j] #{s[j]} | temp_letter #{temp_letter}" )
+
+      if s[j] == temp_letter # will check itself
+        temp_count += 1 # counts itself and others that match it
+
+      end
+
+      j+=1
+    end # inner while
+
+    # if the letter has no duplicates or has at least one e.g. temp count > nill - i think count will never be nil if it's counting itself
+    if ( count == nil || temp_count > count )
+      letter = temp_letter
+      count = temp_count
+    end
+
+    i += 1
+  end # outter while
+
+  return [letter,count]
+end
+
+# These are tests to check that your code is working. After writing
+# your solution, they should all print true.
+
+puts("\nTests for most_common_letter()")
+puts("")
+    puts(
+      'most_common_letter("abca") == ["a", 2]: ' +
+      (most_common_letter('abca') == ['a', 2]).to_s
+    )
+    puts(
+      'most_common_letter("abbab") == ["b", 3]: ' +
+      (most_common_letter('abbab') == ['b', 3]).to_s
     )
 puts("")
