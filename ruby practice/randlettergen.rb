@@ -29,16 +29,18 @@ def rand_lowercase_letters_gen( n )
   # generate the return array
   # calling Array.new() with a block: initialize array of size n with values within the block
   # array = Array.new(n) { a_z.sample } # add .join to block e.g. { a_z.sample }.join to form a string
+  # http://www.rubyguides.com/2015/03/ruby-random/
   array = Array.new(n) { a_z.sample() }
 
   # sample : https://ruby-doc.org/core-1.9.3/Array.html#method-i-sample
   # Chooses a random element or n random elements from the array.
-  # If rng is given, it will be used as the random number generator.
+  # If rng (a function) is given, it will be used as the random number generator.
 
   puts(array.inspect)
+  return array
 
 end
 
 # test - remember to comment out when this is required from a different file
 
-rand_lowercase_letters_gen( 2 )
+# rand_lowercase_letters_gen( 2 )
