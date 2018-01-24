@@ -26,6 +26,8 @@ def modulo_sample( num )
 
 end
 
+
+# About pp, p, print and puts
 #
 # pp - pretty print
 #
@@ -35,26 +37,50 @@ require 'pp'
 
 pp %w( foo bar baz ) # for complex objects
 # output ["foo", "bar", "baz"]
-#
+
 # puts( array.inspect ) # prints out like this [a,b,c]
 #
-# p array # == puts( array.inspect ) "debugging tool !"
+# p array # == puts( array.inspect ) "debugging tool !" ( puts + inspect() )
 
+foo = 0
+p foo # shows 0 - refering to the code above it
+p "foo" # actualy shows qoutes e.g. "foo"
+
+print foo # shows 0 - refering to foo = 0
+print "foo" # DOES NOT SHOW QOUTES --- this is why p is used for debugging i.e. it uses inspect()
+
+puts foo # shows 0 - refering to foo = 0 -- stuck next to output from print "foo" as print does not "print" does not print newline
+puts "foo" # DOES NOT SHOW QOUTES --- this is why p is used for debugging i.e. it uses inspect()
+#
+# source: https://stackoverflow.com/questions/1255324/p-vs-puts-in-ruby
+
+# Difference between puts and print
+#
+# puts - generates a new line after printing while print does not
+# Look at the difference here: https://stackoverflow.com/questions/5018633/what-is-the-difference-between-print-and-puts
 
 #
+#
+# end of About pp, p, print and puts
+
+
+
+# Countdown
 # until loop
 #
-puts()
-puts("Initiating coutdown: ")
-puts("Input a whole number")
-x = gets.chomp.to_i
+def countdown()
+  puts()
+  puts("Initiating coutdown: ")
+  puts("Input a whole number")
+  x = gets.chomp.to_i
 
-until x <= 0 # does loop unitl it becomes true!  replace "=" with "<=" to not include zero as puts() output
-  puts x
-  x -= 1
+  until x <= 0 # does loop unitl it becomes true!  replace "=" with "<=" to not include zero as puts() output
+    puts x
+    x -= 1
+  end
+
+  puts "Done!"
 end
-
-puts "Done!"
 
 
 #
@@ -94,6 +120,14 @@ end
 #
 # https://stackoverflow.com/questions/6395288/double-vs-single-quotes
 # Questino on performance: https://stackoverflow.com/questions/1836467/is-there-a-performance-gain-in-using-single-quotes-vs-double-quotes-in-ruby
+
+
+# Difference between to_s and to_str
+#
+# to_s returns a string representation of an object (explicit conversion)
+# to_str is actually stating that the object behaves like a string! (implicit conversion)
+#
+# Article link: http://marcgg.com/blog/2017/01/23/ruby-to-s-to-str/
 
 #
 # TESTS
