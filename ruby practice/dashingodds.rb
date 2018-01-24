@@ -130,3 +130,62 @@ puts("")
       (dashing_odds(3223) == '3-22-3').to_s
     )
 puts("")
+
+
+
+# Condensed version of dashing_odds()
+#
+#
+def dasherize_num(num)
+
+  num_s = num.to_s
+
+  result = ""
+
+  i = 0
+
+  while num_s.length > i
+
+    digit = num_s[i].to_i
+
+    if (i > 0) # only if the it's not the leading digit
+
+      prev_digit = num_s[i - 1].to_i
+
+      if (prev_digit % 2 == 1) || (digit % 2 == 1)
+        result += "-"
+
+      end
+
+    end
+
+    result += num_s[i]
+
+    i += 1
+  end
+
+  return result
+end
+
+# These are tests to check that your code is working. After writing
+# your solution, they should all print true.
+
+puts("\nTests for dasherize_num()")
+puts("")
+    puts(
+      'dasherize_num(203) == "20-3": ' +
+      (dasherize_num(203) == '20-3').to_s
+    )
+    puts(
+      'dasherize_num(303) == "3-0-3": ' +
+      (dasherize_num(303) == '3-0-3').to_s
+    )
+    puts(
+      'dasherize_num(333) == "3-3-3": ' +
+      (dasherize_num(333) == '3-3-3').to_s
+    )
+    puts(
+      'dasherize_num(3223) == "3-22-3": ' +
+      (dasherize_num(3223) == '3-22-3').to_s
+    )
+puts("")
