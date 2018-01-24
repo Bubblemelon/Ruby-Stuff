@@ -43,6 +43,11 @@ def dashing_odds(num)
     # checks if number is odd
     if( int_to_string[i].to_i % 2 == 0 )
 
+      if( int_to_string[i-1].to_i % 2 == 1 )
+
+        dashified += "-"
+      end
+
       dashified += int_to_string[i]
 
 
@@ -50,7 +55,7 @@ def dashing_odds(num)
 
       dashified += "-"
       dashified += int_to_string[i]
-      dashified += "-"
+      # dashified += "-"
 
     end # if
 
@@ -87,7 +92,7 @@ def dashing_odds(num)
   # remove repeating dashes e.g. 3--3--3
   # treating string as array
 
-
+  # maybe best to have own method !
 
   # End of:
   # remove repeating dashes e.g. 3--3--3
