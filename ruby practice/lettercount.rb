@@ -58,7 +58,7 @@ def hash_letter_freq( array )
     i += 1
   end # while -outter
 
-  puts( hash )
+  # puts( hash )
   return hash
 
 end # def
@@ -156,17 +156,17 @@ end
 
 # should all print true !
 
-puts("\nTests for highest_letter_freq()")
-puts("")
-    puts(
-      'highest_letter_freq( hash_letter_freq( string_splitter("abca") )  == ["a", 2]: ' +
-      ( highest_letter_freq( hash_letter_freq( string_splitter("abca") ) ) == ['a', 2] ).to_s
-    )
-    puts(
-      'highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) == ["b", 3]: ' +
-      ( highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) ) == ['b', 3] ) .to_s
-    )
-puts("")
+# puts("\nTests for highest_letter_freq()")
+# puts("")
+#     puts(
+#       'highest_letter_freq( hash_letter_freq( string_splitter("abca") )  == ["a", 2]: ' +
+#       ( highest_letter_freq( hash_letter_freq( string_splitter("abca") ) ) == ['a', 2] ).to_s
+#     )
+#     puts(
+#       'highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) == ["b", 3]: ' +
+#       ( highest_letter_freq( hash_letter_freq( string_splitter("abbab") ) ) == ['b', 3] ) .to_s
+#     )
+# puts("")
 
 #
 # Does not implement split() and hashes
@@ -214,14 +214,14 @@ end
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
-puts("\nTests for most_common_letter()")
-puts("")
-    puts(
-      'most_common_letter("abca") == ["a", 2]: ' +
-      (most_common_letter('abca') == ['a', 2]).to_s
-    )
-    puts(
-      'most_common_letter("abbab") == ["b", 3]: ' +
-      (most_common_letter('abbab') == ['b', 3]).to_s
-    )
-puts("")
+# puts("\nTests for most_common_letter()")
+# puts("")
+#     puts(
+#       'most_common_letter("abca") == ["a", 2]: ' +
+#       (most_common_letter('abca') == ['a', 2]).to_s
+#     )
+#     puts(
+#       'most_common_letter("abbab") == ["b", 3]: ' +
+#       (most_common_letter('abbab') == ['b', 3]).to_s
+#     )
+# puts("")

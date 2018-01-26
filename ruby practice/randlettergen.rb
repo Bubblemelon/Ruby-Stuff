@@ -36,7 +36,7 @@ def rand_lowercase_letters_gen( n )
   # Chooses a random element or n random elements from the array.
   # If rng (a function) is given, it will be used as the random number generator.
 
-  puts(array.inspect)
+  # puts(array.inspect)
   return array
 
 end

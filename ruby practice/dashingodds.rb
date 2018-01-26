@@ -89,6 +89,9 @@ def dashing_odds(num)
 
   p dashified
 
+
+  # IMPROVEMENT !!!! 
+  #
   # remove repeating dashes e.g. 3--3--3
   # treating string as array
 
