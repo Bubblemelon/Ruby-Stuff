@@ -42,3 +42,16 @@ puts("")
       (string_scrambler("apple", [2,0,3,1,4]) == "plape").to_s
     )
 puts("")
+
+# Another way of doing this but will yeild different results:
+#
+# result = ""
+# result = result + string[positions[i]]
+# markov", [5, 3, 1, 4, 2, 0]) == "vkaorm
+#
+# 5 == string's number 5 position == v
+# 3 == string's number 3 position == k
+# 1 == string's number 1 position == a
+# ...
+# ...
+# so sequentially construct the "string result" based on the given array
