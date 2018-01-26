@@ -39,70 +39,67 @@ end # def
 
 # Takes a string and returns the number of repeating letters
 #
+# Did not look over assumptions i.e. test cases may not be enough
+#
 #
 def num_repeated_letters( s )
 
-  # s_array = s.split("")
-  # p s_array
-  # # ["a", "b", "d", "b", "f", "f", "f"]
-  #
-  # i = 0
-  #
-  # new_limit = 0
-  #
-  # while( s_array.length() > i )
-  #
-  #   j = i + 1
-  #
-  #   p s_array
-  #
-  #   while( s_array.length() + new_limit > j )
-  #
-  #     p "s_array[#{i}] #{s_array[i]} | s_array[#{j}] #{s_array[j]}"
-  #     if( s_array[i] == s_array[j] )
-  #
-  #       # a reoccurance of another letter
-  #
-  #
-  #
-  #       s_array.delete_at( j )
-  #
-  #       p "s_array.length #{s_array.length}"
-  #
-  #       # new_limit += 1
-  #
-  #       p s_array
-  #
-  #       j -= 1
-  #
-  #     end #if
-  #
-  #     j += 1
-  #   end # inner while
-  #
-  #   i += 1
-  # end # while
-  #
-  # return s_array
+  array = s.split("")
+  p array
 
-  # IMPROVEMENT
-  #
-  # Use pop()
-  #
+  i = 0
 
+  counter = 0
 
-end
+  while ( array.length > i )
+
+    j = i + 1
+    popped = false
+
+    while ( array.length > j )
+
+      if( array[i] == array[j] )
+
+        array.delete_at( j )
+
+        if( !popped )
+
+        counter += 1
+
+        popped = true
+
+        end # if -- inner
+
+        #p "array.length #{array.length}"
+        #p array
+
+      end # if
+
+       j += 1
+    end # while
+
+    i += 1
+  end # while - outter
+
+  p "counter #{counter}"
+  return counter
+
+end # def
 
 
 # tests
 #
-# should return all true
+
 
 # repeatinglettersnumber( {"w"=>5, "v"=>1, "t"=>1, "a"=>3, "y"=>13} )
 
 
 # string_splitter -- takes a string and returns an array
 # hash_letter_freq -- takes an array and returns a hash
+
+# should return all true
+#
+#
 # puts("\nTests for #repeatinglettersnumber()")
 # puts("")
 #     puts('repeatinglettersnumber( hash_letter_freq(string_splitter("abdbc")) ) == 1: ' + (repeatinglettersnumber( hash_letter_freq(string_splitter("abdbc")) ) == 1).to_s)
@@ -115,14 +112,23 @@ end
 #
 #
 
-num_repeated_letters( "abdbefffccfddee" )
 
-# puts("\nTests for num_repeated_letters()")
-# puts("")
-#     puts('num_repeated_letters("abdbc") == 1: ' + (num_repeated_letters('abdbc') == 1).to_s)
-#     # one character is repeated
-#     puts('num_repeated_letters("aaa") == 1: ' + (num_repeated_letters('aaa') == 1).to_s)
-#     puts('num_repeated_letters("abab") == 2: ' + (num_repeated_letters('abab') == 2).to_s)
-#     puts('num_repeated_letters("cadac") == 2: ' + (num_repeated_letters('cadac') == 2).to_s)
-#     puts('num_repeated_letters("abcde") == 0: ' + (num_repeated_letters('abcde') == 0).to_s)
-# puts("")
+# num_repeated_letters( "abdbcb" )
+# num_repeated_letters( "aaa" )
+# num_repeated_letters( "abab" )
+# num_repeated_letters( "cadac" )
+# num_repeated_letters( "abcde" )
+num_repeated_letters( "daaadddbhhhcdeeeefgh" )
+
+# should return all true
+#
+#
+puts("\nTests for num_repeated_letters()")
+puts("")
+    puts('num_repeated_letters("abdbc") == 1: ' + (num_repeated_letters('abdbc') == 1).to_s)
+    # one character is repeated
+    puts('num_repeated_letters("aaa") == 1: ' + (num_repeated_letters('aaa') == 1).to_s)
+    puts('num_repeated_letters("abab") == 2: ' + (num_repeated_letters('abab') == 2).to_s)
+    puts('num_repeated_letters("cadac") == 2: ' + (num_repeated_letters('cadac') == 2).to_s)
+    puts('num_repeated_letters("abcde") == 0: ' + (num_repeated_letters('abcde') == 0).to_s)
+puts("")
