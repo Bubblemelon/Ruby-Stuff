@@ -48,16 +48,16 @@ end # def
 #
 # TEST
 #
-
-is_prime?(60) #NO
-is_prime?(16) #NO
-is_prime?(17) #YES
-is_prime?(51) #NO
-
-puts("\nTests for is_prime?()")
-puts("")
-    puts('is_prime?(2) == true: ' + (is_prime?(2) == true).to_s)
-    puts('is_prime?(3) == true: ' + (is_prime?(3) == true).to_s)
-    puts('is_prime?(4) == false: ' + (is_prime?(4) == false).to_s)
-    puts('is_prime?(9) == false: ' + (is_prime?(9) == false).to_s)
-puts("")
+is_prime?(5)
+# is_prime?(60) #NO
+# is_prime?(16) #NO
+# is_prime?(17) #YES
+# is_prime?(51) #NO
+#
+# puts("\nTests for is_prime?()")
+# puts("")
+#     puts('is_prime?(2) == true: ' + (is_prime?(2) == true).to_s)
+#     puts('is_prime?(3) == true: ' + (is_prime?(3) == true).to_s)
+#     puts('is_prime?(4) == false: ' + (is_prime?(4) == false).to_s)
+#     puts('is_prime?(9) == false: ' + (is_prime?(9) == false).to_s)
+# puts("")
