@@ -48,7 +48,13 @@ def prime_num_gen( array_size )
         # p " i #{i}"
         # p " divisors #{divisors}"
 
-        # extra check - if i has more than 2 divisors
+        # START extra check - if i has more than 2 divisors
+        #
+        # IMPROVEMENT!!!!
+        #
+        # Could have simply called is_prime?( i ) --> returns true if prime
+        # if is_prime? ? array.push(i) : p "do nothing"
+        #
         j = 1
         while( i >= j )
 
@@ -70,6 +76,10 @@ def prime_num_gen( array_size )
 
         divisors.clear
         # p divisors
+
+        # END of extra check
+        #
+        # extra check - if i has more than 2 divisors
 
       end # if (prime numbers cannot be even)
 
