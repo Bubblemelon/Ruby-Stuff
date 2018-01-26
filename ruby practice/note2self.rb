@@ -129,9 +129,27 @@ end
 #
 # Article link: http://marcgg.com/blog/2017/01/23/ruby-to-s-to-str/
 
+
+def wrapping_round( offset )
+
+  # z == 122 ascii
+  # 26 letters
+  # a == 97 ascii
+  # offset the amount to change the letter to
+  # e.g. offset = 3 and letter = a so, 97 + 3 = 100 == d
+
+  number = ( 122 - 97 + offset ) % 26
+
+  p number
+
+end
+
+
 #
 # TESTS
 #
 # looping_by_multi_2( 78 )
 # modulo_sample(78)
-puts( largest_hash_key( {"a"=>3, "r"=>1, "b"=>1, "c"=>2, "d"=>1} ) )
+# puts( largest_hash_key( {"a"=>3, "r"=>1, "b"=>1, "c"=>2, "d"=>1} ) )
+
+wrapping_round( 1 )
