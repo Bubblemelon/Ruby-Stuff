@@ -9,6 +9,7 @@
 #
 # Two is the only even prime number
 # One is not a prime number
+# https://en.wikipedia.org/wiki/Prime_number
 
 def is_prime?( number )
 

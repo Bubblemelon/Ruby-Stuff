@@ -9,6 +9,8 @@
 #
 # Returns the element specified by index n ( counting from 0-th to n-th)
 #
+# https://en.wikipedia.org/wiki/Prime_number
+#
 def nth_prime( n )
 
   prime_number_array = prime_num_gen( n + 1 )
@@ -99,6 +101,7 @@ end # def
 #
 
 # prime_num_gen( 20 ) # [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
+# https://en.wikipedia.org/wiki/Prime_number
 
 #
 # Should all print true
