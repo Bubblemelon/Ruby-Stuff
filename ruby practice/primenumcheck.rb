@@ -12,7 +12,7 @@
 
 def is_prime?( number )
 
-  if( number == 1 )
+  if( number <= 1 )
     return false
   end
 
@@ -27,6 +27,10 @@ def is_prime?( number )
 
     i += 1
   end # while
+  #
+  # Or as long as number can be divided by 2 (& is not 2 || number > 2) then it is not Prime
+  # i.e. number % 2 == 0 ? false : true
+  # because Two is the only even prime number !
 
   # p array
 
