@@ -96,20 +96,20 @@ end # def
 #
 # Note if false == false, then this results are true!!!
 
-puts("\nTests for palindrome?()")
-puts()
-    puts('palindrome?("abc") == false: ' + (palindrome?('abc') == false).to_s)
-    puts('palindrome?("abcba") == true: ' + (palindrome?('abcba') == true).to_s)
-    puts('palindrome?("z") == true: ' + (palindrome?('z') == true).to_s)
-puts()
-
-# palindrome?("abc")
-
-puts("\nTests for palindrome2?()")
-puts()
-    puts('palindrome2?("abc") == false: ' + (palindrome2?('abc') == false).to_s)
-    puts('palindrome2?("abcba") == true: ' + (palindrome2?('abcba') == true).to_s)
-    puts('palindrome2?("z") == true: ' + (palindrome2?('z') == true).to_s)
-puts()
-
-palindrome2?("abc")
+# puts("\nTests for palindrome?()")
+# puts()
+#     puts('palindrome?("abc") == false: ' + (palindrome?('abc') == false).to_s)
+#     puts('palindrome?("abcba") == true: ' + (palindrome?('abcba') == true).to_s)
+#     puts('palindrome?("z") == true: ' + (palindrome?('z') == true).to_s)
+# puts()
+#
+# # palindrome?("abc")
+#
+# puts("\nTests for palindrome2?()")
+# puts()
+#     puts('palindrome2?("abc") == false: ' + (palindrome2?('abc') == false).to_s)
+#     puts('palindrome2?("abcba") == true: ' + (palindrome2?('abcba') == true).to_s)
+#     puts('palindrome2?("z") == true: ' + (palindrome2?('z') == true).to_s)
+# puts()
+#
+# palindrome2?("abc")
