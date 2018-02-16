@@ -18,8 +18,8 @@ This is where I store some of my practice scrips written in ruby.
 
 > Takes an integer i.e. "number".
 > Returns true if this "number" is prime, otherwise it returns false.  
-> [Prime numbers:](https://en.wikipedia.org/wiki/Prime_number) [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, ...](http://www.primos.mat.br/indexen.html).
-> A Prime number has only two divisors, 1 and itself. ( 1 is not prime )
+> [Prime numbers:](https://en.wikipedia.org/wiki/Prime_number) [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, ...](http://www.primos.mat.br/indexen.html).  
+> A Prime number has only two divisors, 1 and itself.  
 
 ### [randlettergen.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randlettergen.rb)  
 
@@ -35,10 +35,10 @@ This is where I store some of my practice scrips written in ruby.
 `random_numbers_Gen_4_array(length, min, max)`  
 
 > Uses the [rand() function from the Kernel Module](http://ruby-doc.org/core-2.1.3/Kernel.html#method-i-rand), look at the comments in this [function's script](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randnumarray.rb) for more details.  
-> Takes integers of 'length', 'min', and 'max' as parameters.  
-> length: an array's length  
-> min: the minimum value for the random number generation (the range's lower bound)  
-> max: the maximum value for the random number generation (the range's upper bound)  
+> Takes integers of 'length', 'min', and 'max' as parameters:  
+> - length: an array's length  
+> - min: the minimum value for the random number generation (the range's lower bound)  
+> - max: the maximum value for the random number generation (the range's upper bound)  
 > Returns an array of random whole numbers using the above parameters.  
 
 ### [removerepeatedletters.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/removerepeatedletters.rb)  
