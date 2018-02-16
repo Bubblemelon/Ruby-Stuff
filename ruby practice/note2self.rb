@@ -2,6 +2,11 @@
 
 # some test functionss
 
+
+# Markdown:
+#
+# newline: hit 'space' twice and enter at the end of a sentence.
+
 #
 #
 #

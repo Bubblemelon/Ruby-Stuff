@@ -4,10 +4,10 @@ require_relative 'randlettergen'
 #
 # instance variables:
 #
-@test_array = rand_lowercase_letters_gen( 5 ) # from randlettergen.rb
-# p @test_array
-
-@test_hash = hash_letter_freq( @test_array ) # from lettercount.rb
+# @test_array = rand_lowercase_letters_gen( 5 ) # from randlettergen.rb
+# # p @test_array
+#
+# @test_hash = hash_letter_freq( @test_array ) # from lettercount.rb
 
 
 # A method that counts the number of letters that repeat ( not its frequency )
@@ -60,7 +60,7 @@ def num_repeated_letters( s )
 
       if( array[i] == array[j] )
 
-        array.delete_at( j )
+        array.delete_at( j ) # this eventually removes all the repeats
 
         if( !popped )
 
@@ -81,6 +81,7 @@ def num_repeated_letters( s )
     i += 1
   end # while - outter
 
+  p array # comment this out before run
   p "counter #{counter}"
   return counter
 
