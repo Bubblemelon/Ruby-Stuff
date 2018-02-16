@@ -17,6 +17,7 @@ This is where I store some of my practice scrips written in ruby.
 ### [z-near-a.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/z-near-a.rb)
 
   - `z_after_a(string)`  
+  
     > Takes a string of lowercase letters.  
     > Returns true if the letter "z" appears within three indexes after an "a".
     > e.g. 0 => a, then z must appear with indexes [1], [2], [3] .
