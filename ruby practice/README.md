@@ -19,11 +19,11 @@ This is where I store some of my practice scrips written in ruby.
   > `time_conversion(minutes)` uses modulo '%' to count remaining minutes and divide '/' to count the hours. ( look at inline comments in this file )  
 
 
-  - ### `time_conversion2(minutes)`  
+- ### `time_conversion2(minutes)`  
 
-    > Same purpose as `time_conversion(minutes)` but implemented differently.  
-    > `time_conversion2(minutes)` uses if statements to see if it's more than 60 minutes, adds 1 to hour variable and then subtract by 60 within a while loop.  
-    
+  > Same purpose as `time_conversion(minutes)` but implemented differently.  
+  > `time_conversion2(minutes)` uses if statements to see if it's more than 60 minutes, adds 1 to hour variable and then subtract by 60 within a while loop.  
+
 ### [vowelcount.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/vowelcount.rb) `vowel_count(string)`  
 > Takes a string of lower case letters.  
 > Returns the number of vowels in that string.
@@ -41,7 +41,7 @@ This is where I store some of my practice scrips written in ruby.
     > Returns true if the letter "z" appears within three indexes after an "a".
     > e.g. 0 => a, then z must appear with indexes [1], [2], [3] .
 
-    - ### `z_after_a2(string)`  
+  - ### `z_after_a2(string)`  
 
-      > Same purpose as `z_after_a(string)` but implemented differently.  
-      > This uses a while loop to check, the former only uses if statements which may not catch all cases ( as in work for all cases )   
+    > Same purpose as `z_after_a(string)` but implemented differently.  
+    > This uses a while loop to check, the former only uses if statements which may not catch all cases ( as in work for all cases )   
