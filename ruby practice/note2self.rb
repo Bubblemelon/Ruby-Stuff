@@ -149,7 +149,7 @@ end
 # TESTS
 #
 # looping_by_multi_2( 78 )
-# modulo_sample(78)
+modulo_sample(1)
 # puts( largest_hash_key( {"a"=>3, "r"=>1, "b"=>1, "c"=>2, "d"=>1} ) )
 
-wrapping_round( 1 )
+# wrapping_round( 1 )
