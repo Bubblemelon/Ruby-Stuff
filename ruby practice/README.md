@@ -5,6 +5,27 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
+### [factorial.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/factorial.rb)  
+
+`factorial(n)`  
+
+> Takes an integer "n".  
+> Returns the factorial of "n" e.g. 3! == 3*2*1 == 6  
+> Implements recursion.
+
+`factorial2(n)`  
+
+> Same purpose as `factorial(n)` but implemented without recursion.  
+
+### [greatestcommonfactor.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/greatestcommonfactor.rb)  
+
+`greatest_common_factor( num1, num2)`  
+
+> Takes two integers.  
+> Returns the largest common factor shared between "num1" and 'num2'.   
+> The return value will always take the last element from the union of the factors.
+> This function stores all the factors of "num1" and "num2" in their own arrays. The factors are ordered from the smallest to the largest beginning from index zero, look at the first while loop of this function.  
+
 ### [greatestnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/greatestnumarray.rb)  
 
 `greatest( array )`  
@@ -61,7 +82,7 @@ This is where I store some of my practice scrips written in ruby.
 > Assumes only spaces and lowercase letters in "sentence".  
 > Uses the ternary operator, making this function's implementation shorter than `ongest_word2(sentence)`.  
 
-`ongest_word2(sentence)`  
+`longest_word2(sentence)`  
 
 > Same purpose as `longest_word(sentence)` but implemented differently.  
 > This function's implementation does not use the ternary operator.  
@@ -88,7 +109,7 @@ This is where I store some of my practice scrips written in ruby.
 > Takes an integer "array_size".  
 > Returns an array of prime numbers in sequential order from smallest to largest with this array length equal to "array_size".  
 
-`nth_prime( n )`  
+`nth_prime(n)`  
 
 > Takes an integer "n" as the position of a prime number in the prime number sequence.  
 > Returns the prime number at the "n"th position.  
