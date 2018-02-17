@@ -9,12 +9,12 @@ require_relative 'randlettergen'
 # A-Z CONSTANT
 # @@ class
 
-# instance of common_letter_count.rb
+# instance of letter_count.rb
 # an array of randomised letters -- using method from randlettergen.rb
 @letters = rand_lowercase_letters_gen( 10 )
 
 # hash_letter_freq()
-# Takes an array of single randomised letters
+# Takes an array of randomised letters
 #
 # Using a hash, have the letter as the key
 # and it's frequency (the number of repeats) as its value
@@ -211,8 +211,7 @@ def most_common_letter(s)
   return [letter,count]
 end
 
-# These are tests to check that your code is working. After writing
-# your solution, they should all print true.
+# Tests:
 
 # puts("\nTests for most_common_letter()")
 # puts("")
