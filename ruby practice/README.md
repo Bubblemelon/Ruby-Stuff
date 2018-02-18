@@ -5,17 +5,31 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
+### [dashingodds.rb]()
+
+`dashing_odds(num)`  
+
+> Takes an integer "num" (could be more than one digit).   
+> Returns a string where a dash is placed in front and back of an odd number, this string does not have trailing and leading dashes.  
+> e.g. num = 203, returns "20-3" as a string.  
+> This implementation is longer; this function slices the string front and back after dashes are added.   
+
+`dasherize_num(num)`  
+
+> Same purpose as `dashing_odds(num)` but implemented differently.  
+> Ignores adding a dash to the first digit regardless of odd or even, and then adds a dash if either the current digit or the current digit's previous digit is odd. This does not cause a trailing dash because the dash is always added to the string before the digit.  
+
 ### [factorial.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/factorial.rb)  
 
 `factorial(n)`  
 
 > Takes an integer "n".  
-> Returns the factorial of "n" e.g. 3! == 3*2*1 == 6  
+> Returns the factorial of "n" e.g. n = 3, then n! == 3! == 3*2*1 == 6  
 > Implements recursion.
 
 `factorial2(n)`  
 
-> Same purpose as `factorial(n)` but implemented without recursion.  
+> Same purpose as `factorial(n)` but implemented without using recursion.  
 
 ### [greatestcommonfactor.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/greatestcommonfactor.rb)  
 
