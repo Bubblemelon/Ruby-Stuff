@@ -122,11 +122,15 @@ puts("")
 puts("\nTests for capwords2()")
 puts("")
     puts(
-      'capwords2(" this is a   sentence") == "This Is A Sentence": ' +
-      (capwords2(" this is a   sentence") == "This Is A Sentence").to_s
+      'capwords2(" this is a   sentence ") == "This Is A Sentence": ' +
+      (capwords2(" this is a   sentence ") == "This Is A Sentence").to_s
     )
     puts(
-      'capwords2("mike, bloomfield") == "Mike Bloomfield": ' +
-      (capwords2("mike, , bloomfield") == "Mike Bloomfield").to_s
+      'capwords2("mike, , bloomfield") == "Mike, , Bloomfield": ' +
+      (capwords2("mike, , bloomfield") == "Mike, , Bloomfield").to_s
+    )
+    puts(
+      'capwords2("jam") == "Jam": ' +
+      (capwords2("jam") == "Jam").to_s
     )
 puts("")
