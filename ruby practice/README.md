@@ -5,14 +5,30 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
+### [capwords.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/capwords.rb)  
+
+`capwords(string)`  
+
+> Takes a string of lowercase words as a sentence, with a "space" in between words.   
+> Returns a string with each word's first letter capitalised.  
+> e.g. "candy cane forest", returns "Candy Cane Forest".  
+> Assumes no punctuation and assumes no spaces in the beginning of a sentence.  
+> This implementation capitalises the first letter of every word in the given sentence/"string", looks for a "space" character and then capitalises the element to its right, next to this space. This function does not split the string into an array, it treats the "string" as an array.      
+
+`capwords2(string)`  
+
+> Same purpose as `capwords(string)` but implemented differently.  
+> This implementation can handle punctuation and multiple spaces, at the beginning of the sentence and anywhere in between and at the end.  
+> This function splits the "string" into an array of words (including punctuation if any) and then capitalises each element in the array (if an element is a punctuation, it is ignored and is returned as part of the string in the same order it was received). This array is then joined as a string with spaces between each capitalised element.  
+
 ### [consec7.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/consec7.rb)  
 
 `three_7s?(array)`  
 
-> Takes an array of integers "array", that are whole numbers, and may have negative.    
+> Takes an array of integers, i.e. whole numbers and may have negative.    
 > Returns true if any three consecutive elements from "array" sums up to 7.  
 > Less thoroughly checked; IMPROVEMENT:  
-> - Use `random_numbers_Gen_4_array` from [randnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randnumarray.rb) as parameter to test this function's correctness.  
+> - Use `random_numbers_Gen_4_array` from [randnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randnumarray.rb) to form an array variable to use as a parameter to test this function's correctness.  
 
 ### [dashingodds.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/dashingodds.rb)
 

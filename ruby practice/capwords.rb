@@ -1,4 +1,5 @@
-# Takes a string of lower case words in of a sentence and returns the beginning of each word capitalized
+# Takes a string of lower case words in of a sentence
+# and returns the beginning of each word capitalized
 #
 #
 # Some useful methods:
@@ -121,11 +122,11 @@ puts("")
 puts("\nTests for capwords2()")
 puts("")
     puts(
-      'capwords2("this is a sentence") == "This Is A Sentence": ' +
-      (capwords2("this is a sentence") == "This Is A Sentence").to_s
+      'capwords2(" this is a   sentence") == "This Is A Sentence": ' +
+      (capwords2(" this is a   sentence") == "This Is A Sentence").to_s
     )
     puts(
-      'capwords2("mike bloomfield") == "Mike Bloomfield": ' +
-      (capwords2("mike bloomfield") == "Mike Bloomfield").to_s
+      'capwords2("mike, bloomfield") == "Mike Bloomfield": ' +
+      (capwords2("mike, , bloomfield") == "Mike Bloomfield").to_s
     )
 puts("")
