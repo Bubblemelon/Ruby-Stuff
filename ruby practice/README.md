@@ -13,13 +13,13 @@ This is where I store some of my practice scrips written in ruby.
 > Returns a string with each word's first letter capitalised.  
 > e.g. "candy cane forest", returns "Candy Cane Forest".  
 > Assumes no punctuation and assumes no spaces in the beginning of a sentence. This function cannot handle multiple spaces.    
-> This implementation capitalises the first letter of every word in the given sentence/"string", looks for a "space" character and then capitalises the element to its right, next to this space. This function does not split the string into an array, it treats the "string" as an array and will always capitalises the start of the sentence.        
+> This implementation capitalises the first letter of every word in the given sentence/"string", looks for a "space" character and then capitalises the element to its right, next to this space. This function does not split the string into an array, it treats the "string" as an array. This function will always capitalise the start of the sentence.        
 
 `capwords2(string)`  
 
 > Same purpose as `capwords(string)` but implemented differently.  
 > This implementation can handle punctuation and multiple spaces, at the beginning and end of the sentence i.e. anywhere between words. This means that a word is any character(s) enclosed by a space (using ! to denote a space character), e.g. "!asdf! " or "!asdf" or "asdf!", *asdf* is considered as a word.  
-> This function splits the "string" into an array of words (including punctuation if any) and then capitalises each element in the array (if an element is a punctuation, it is ignored and is returned as part of the string in the same order it was received). This array is then joined as a string with spaces between each capitalised element.  
+> This function splits the "string" into an array of words (including punctuation if any) and then capitalises each element in the array (if an element is a punctuation, it is ignored and is returned as part of the string in the same order it was received). This array is then joined as a string with spaces between each capitalised element as the return string.  
 
 ### [consec7.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/consec7.rb)  
 
