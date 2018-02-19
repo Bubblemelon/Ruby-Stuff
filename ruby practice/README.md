@@ -18,7 +18,7 @@ This is where I store some of my practice scrips written in ruby.
 `capwords2(string)`  
 
 > Same purpose as `capwords(string)` but implemented differently.  
-> This implementation can handle punctuation and multiple spaces, at the beginning and end of the sentence i.e. anywhere between words. This means that a word is any character(s) enclosed by a space, e.g. " asdf " or " asdf" or "asdf ", *asdf* is considered as a word.  
+> This implementation can handle punctuation and multiple spaces, at the beginning and end of the sentence i.e. anywhere between words. This means that a word is any character(s) enclosed by a space (using ! to denote a space character), e.g. "!asdf! " or "!asdf" or "asdf!", *asdf* is considered as a word.  
 > This function splits the "string" into an array of words (including punctuation if any) and then capitalises each element in the array (if an element is a punctuation, it is ignored and is returned as part of the string in the same order it was received). This array is then joined as a string with spaces between each capitalised element.  
 
 ### [consec7.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/consec7.rb)  
