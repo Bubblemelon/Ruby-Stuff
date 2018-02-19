@@ -5,7 +5,16 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
-### [dashingodds.rb]()
+### [consec7.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/consec7.rb)  
+
+`three_7s?(array)`  
+
+> Takes an array of integers "array", that are whole numbers, and may have negative.    
+> Returns true if any three consecutive elements from "array" sums up to 7.  
+> Less thoroughly checked; IMPROVEMENT:  
+> - Use `random_numbers_Gen_4_array` from [randnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randnumarray.rb) as parameter to test this function's correctness.  
+
+### [dashingodds.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/dashingodds.rb)
 
 `dashing_odds(num)`  
 
