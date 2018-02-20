@@ -155,29 +155,29 @@ end #def
 
 # Tests
 
-# remove_repeated_nums_in_array( [4,4,4,3,3,3,5,5,5] )
-
- third_great(   bubble_sort(random_numbers_Gen_4_array(10, 1, 10))    )
+ # remove_repeated_nums_in_array( [4,4,4,3,3,3,5,5,5] )
+ #
+ # third_great(   bubble_sort(random_numbers_Gen_4_array(10, 1, 10))    )
 
 
 # below should all print true
 
-puts("\nTests for third_great2()")
-puts("")
-    puts(
-      'third_great2([5, 3, 7]) == 3: ' +
-      (third_great2([5, 3, 7]) == 3).to_s
-    )
-    puts(
-      'third_great2([5, 3, 7, 4]) == 4: ' +
-      (third_great2([5, 3, 7, 4]) == 4).to_s
-    )
-    puts(
-      'third_great2([2, 3, 7, 4]) == 3: ' +
-      (third_great2([2, 3, 7, 4]) == 3).to_s
-    )
-puts("")
-
+# puts("\nTests for third_great2()")
+# puts("")
+#     puts(
+#       'third_great2([5, 3, 7]) == 3: ' +
+#       (third_great2([5, 3, 7]) == 3).to_s
+#     )
+#     puts(
+#       'third_great2([5, 3, 7, 4]) == 4: ' +
+#       (third_great2([5, 3, 7, 4]) == 4).to_s
+#     )
+#     puts(
+#       'third_great2([2, 3, 7, 4]) == 3: ' +
+#       (third_great2([2, 3, 7, 4]) == 3).to_s
+#     )
+# puts("")
+#
 puts("\nTests for third_great3()")
 puts("")
     puts(
@@ -185,11 +185,15 @@ puts("")
       (third_great3([5, 3, 7]) == 3).to_s
     )
     puts(
-      'third_great3([5, 3, 7, 4]) == 4: ' +
-      (third_great3([5, 3, 7, 4]) == 4).to_s
+      'third_great3([5, 4, 3, 7, 4]) == 4: ' +
+      (third_great3([5, 4, 3, 7, 4]) == 4).to_s
     )
     puts(
       'third_great3([2, 3, 7, 4]) == 3: ' +
       (third_great3([2, 3, 7, 4]) == 3).to_s
+    )
+    puts(
+      'third_great3([-4, -2, 0, -1]) == -2: ' +
+      (third_great3([-4, -2, 0, -1]) == -2).to_s
     )
 puts("")

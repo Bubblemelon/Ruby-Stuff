@@ -24,12 +24,12 @@ def bubble_sort( array )
 
     while( array.length - 1 > i )
 
-      if( array[i+1] > array[i] )
+      if( array[i+1] > array[i] ) #change this to reverse order
         puts("Made a swap with index #{i+1} & #{i}:")
 
-        temp_store = array[i] # smaller value
-        array[i] = array[i+1]
-        array[i+1] = temp_store # put smaller value to the left
+        temp_store = array[i] # smaller value #change this to reverse order
+        array[i] = array[i+1] #change this to reverse order
+        array[i+1] = temp_store # put smaller value to the left #change this to reverse order
 
         no_swaps = false
 

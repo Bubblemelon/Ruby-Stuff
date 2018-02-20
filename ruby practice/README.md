@@ -5,7 +5,44 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
-### []()
+### [3rdgreatest.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/3rdgreatest.rb)  
+
+> The purpose of the first two functions below is to return the 3rd largest number in an array.  
+
+`remove_repeated_nums_in_array(array)`   
+
+> Takes an "array" of integers.  
+> Returns an array with the repeated numbers removed.  
+> e.g. array = [4,4,4,3,3,3,5,5,5], returns [4, 3, 5]  
+
+`third_great(array)`  
+
+> Takes an "array" of integers.  
+> Returns the third largest element from this "array".  
+> Needs `bubble_sort(array)` to sort the given "array" and calls `remove_repeated_nums_in_array` within the function to remove the repeated numbers (if any) from the already sorted array.
+> Assumes largest (index 0) to smallest order of the sorted and removed repeated numbers array. The return value will always be the 3rd element or at index 2 of this array.  
+
+`third_great2( array )`  
+
+> Same purpose as `third_great(array)` and slightly redundant.  
+> This function is for arrays that do not have repeated numbers and calls `bubble_sort(array)` from [bubblesort.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/bubblesort.rb) to sort the given "array".  
+> The return value will always be the 3rd element or at index 2 of the sorted array.  
+
+`third_great3(array)`  
+
+> Takes an "array" of integers.  
+> Returns the 3rd largest element from "array".  
+> This function can handle repeated numbers and requires prior no sorting. 
+> Does what `remove_repeated_nums_in_array(array)` + `third_great(array)` and `third_great2( array )` alone as a function.
+
+
+### [bubblesort.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/bubblesort.rb)  
+
+`bubble_sort(array)`  
+
+> Takes an "array" of integers.  
+> Returns an array with the integers sorted from highest (index 0) to lowest.  
+> To reverse this order, look at "#change this to reverse order" to have the smaller value in the beginning of the array instead.  
 
 ### [caesarcipher.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/caesarcipher.rb)  
 
@@ -15,8 +52,8 @@ This is where I store some of my practice scrips written in ruby.
 > Returns a string where each letter is shifted by the "offset".  
 > Assumes "string" has only lowercase letters and a space between words.  
 > e.g. offset = 3 and string = "a", returns "d"   
-> e.g. offset = 1 and string = "z", returns "a" ; shifting beyond "z" wraps back around to the start of the alphabet again.   
-> Look at the inline comment #IMPORTANT for this wrap around algorithm.  
+> e.g. offset = 1 and string = "z", returns "a" ; shifting beyond "z" wraps back around to the start of the alphabet again    
+> Look at the inline comment "#IMPORTANT" for this wrap around algorithm.  
 
 ### [capwords.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/capwords.rb)  
 
@@ -31,7 +68,7 @@ This is where I store some of my practice scrips written in ruby.
 `capwords2(string)`  
 
 > Same purpose as `capwords(string)` but implemented differently.  
-> This implementation can handle punctuation and multiple spaces, at the beginning and end of the sentence i.e. anywhere between words. This means that a word is any character(s) enclosed by a space (using ! to denote a space character), e.g. "!asdf! " or "!asdf" or "asdf!", *asdf* is considered as a word.  
+> This implementation can handle punctuation and multiple spaces, at the beginning and end of the sentence i.e. anywhere between words. This means that a word is any character(s) enclosed by a space (using ! to denote a space character), e.g. "!asdf! " or "!asdf" or "asdf!", *asdf* is considered as a word  
 > This function splits the "string" into an array of words (including punctuation if any) and then capitalises each element in the array (if an element is a punctuation, it is ignored and is returned as part of the string in the same order it was received). This array is then joined as a string with spaces between each capitalised element as the return string.  
 
 ### [consec7.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/consec7.rb)  
@@ -49,7 +86,7 @@ This is where I store some of my practice scrips written in ruby.
 
 > Takes an integer "num" (could be more than one digit).   
 > Returns a string where a dash is placed in front and back of an odd number, this string does not have trailing and leading dashes.  
-> e.g. num = 203, returns "20-3" as a string.  
+> e.g. num = 203, returns "20-3" as a string  
 > This implementation is longer; this function slices the string front and back after dashes are added.   
 
 `dasherize_num(num)`  
@@ -62,7 +99,7 @@ This is where I store some of my practice scrips written in ruby.
 `factorial(n)`  
 
 > Takes an integer "n".  
-> Returns the factorial of "n" e.g. n = 3, then n! == 3! == 3*2*1 == 6  
+> Returns the factorial of "n" e.g. n = 3, then n! == 3! == 3*2*1 == 6   
 > Implements recursion.
 
 `factorial2(n)`  
@@ -71,7 +108,7 @@ This is where I store some of my practice scrips written in ruby.
 
 ### [greatestcommonfactor.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/greatestcommonfactor.rb)  
 
-`greatest_common_factor( num1, num2)`  
+`greatest_common_factor(num1, num2)`  
 
 > Takes two integers.  
 > Returns the largest common factor shared between "num1" and 'num2'.   
@@ -80,7 +117,7 @@ This is where I store some of my practice scrips written in ruby.
 
 ### [greatestnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/greatestnumarray.rb)  
 
-`greatest( array )`  
+`greatest(array)`  
 
 > Takes an array of integers.  
 > Returns the largest number in "array".  
@@ -97,7 +134,7 @@ This is where I store some of my practice scrips written in ruby.
 > Explains [ruby scope](http://www.techotopia.com/index.php/Ruby_Variable_Scope).  
 > The purpose of the three functions below is to get the highest frequency of a letter, as in the most common letter in a string.   
 
-`string_splitter( string )`  
+`string_splitter(string)`  
 
 > Takes a string.  
 > Returns an array of this string with its letters/characters as individual elements.  
@@ -116,7 +153,6 @@ This is where I store some of my practice scrips written in ruby.
 > Returns the letter with the highest frequency, the most number of repeats, as an array with the letter and its frequency. e.g. [l,2]  
 > Uses `Hash.each` block and an alternative function i.e. `Hash.max_by{|key,value| value}` can be found in the [note2self.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/note2self.rb) file.  
 > Explanation on [Hash.values()](http://ruby-doc.org/core-1.9.3/Hash.html#method-i-values).  
-
 
 `most_common_letter(s)`  
 
@@ -241,7 +277,7 @@ This is where I store some of my practice scrips written in ruby.
 
 > Takes a number i.e. "num".   
 > Returns true if num is a value of the power of 2 i.e. if for some n that, 2^n = num .  
-> e.g. num = 2, this returns true because 2^1 = num.  
+> e.g. num = 2, this returns true because 2^1 = num   
 > These are some of the [values of the power of 2](https://en.wikipedia.org/wiki/Power_of_two): 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...  
 > This method keeps multiplying the variable result which starts off as "1" by 2 until it matches or surpasses "num"; returns true if the eventual result == num otherwise returns false.  
 
@@ -268,7 +304,7 @@ This is where I store some of my practice scrips written in ruby.
 > Uses the [Array() function from the Kernel Module](http://ruby-doc.org/core-2.2.0/Array.html#class-Array-label-Example+Usage) to create an array with a specified condition for its elements.  
 > Uses the [array sample() function](https://ruby-doc.org/core-1.9.3/Array.html#method-i-sample) to randomly select random elements from a specified array.  
 > Take an integer "n" to specify the size of the randomly generated array.  
-> Returns a randomly generated array of size n e.g. array.length() == n.    
+> Returns a randomly generated array of size n e.g. array.length() == n     
 
 ### [randnumarray.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randnumarray.rb)  
 
@@ -295,7 +331,7 @@ This is where I store some of my practice scrips written in ruby.
 > require_relative ['lettercount'](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/lettercount.rb) and ['randlettergen'](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/randlettergen.rb), only used during testing.    
 > Takes a hash of lowercase letters as keys and its frequency as values, e.g. "aaabbc", a=>3 b=>2 c=>1  
 > Returns the number of repeating letters.  
-> e.g. "aaabbc", using this function would return 2. As in, there are 2 repeating letters i.e. "a" and "b".
+> e.g. "aaabbc", using this function would return 2. As in, there are 2 repeating letters i.e. "a" and "b"  
 > In other words, this function counts the number of letters that repeat (not a letter's frequency of repeats).  
 
 `num_repeated_letters( s )`  
@@ -322,7 +358,7 @@ This is where I store some of my practice scrips written in ruby.
 
 `string_scrambler(string, positions_array)`  
 
-> Takes a string and an array of the string's new index positions .e.g. "dog" [2,1,0] becomes "god".  
+> Takes a string and an array of the string's new index positions .e.g. "dog" [2,1,0] becomes "god"   
 > Returns a string containing letters corresponding to the new positions.
 
 ### [time.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/time.rb)  
@@ -361,7 +397,7 @@ This is where I store some of my practice scrips written in ruby.
 
 > Takes a string of lowercase letters.  
 > Returns true if the letter "z" appears within three indexes after an "a".
-> e.g. 0 => a, then z must appear with indexes [1], [2], [3] .
+> e.g. 0 => a, then z must appear with indexes [1], [2], [3]   
 
 `z_after_a2(string)`  
 
