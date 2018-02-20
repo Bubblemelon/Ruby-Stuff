@@ -5,6 +5,19 @@ This is where I store some of my practice scrips written in ruby.
 
 ## Catalog  
 
+### []()
+
+### [caesarcipher.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/caesarcipher.rb)  
+
+`caesar_cipher(offset, string)`  
+
+> Takes an integer "offset" and a "string".  
+> Returns a string where each letter is shifted by the "offset".  
+> Assumes "string" has only lowercase letters and a space between words.  
+> e.g. offset = 3 and string = "a", returns "d"   
+> e.g. offset = 1 and string = "z", returns "a" ; shifting beyond "z" wraps back around to the start of the alphabet again.   
+> Look at the inline comment #IMPORTANT for this wrap around algorithm.  
+
 ### [capwords.rb](https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/capwords.rb)  
 
 `capwords(string)`  
